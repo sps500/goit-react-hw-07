@@ -1,0 +1,43 @@
+/* Contact.module.css */
+.list_style {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.container_style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.icon_style {
+  margin-right: 10px;
+}
+
+.span_style {
+  font-weight: bold;
+}
+
+.button_style {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
