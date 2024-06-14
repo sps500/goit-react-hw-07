@@ -1,20 +1,15 @@
 .container {
-  width: 400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  padding: 16px;
 }
 
 .title {
-  font-size: 2em;
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .subtitle {
-  font-size: 1.5em;
-  margin: 20px 0;
   text-align: center;
+  margin-top: 32px;
 }

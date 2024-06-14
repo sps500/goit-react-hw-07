@@ -1,43 +1,39 @@
-/* Contact.module.css */
-.list_style {
-  list-style: none;
-  margin-bottom: 10px;
-}
-
-.container_style {
+.contact {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 16px;
   background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.icon_style {
-  margin-right: 10px;
-}
-
-.span_style {
-  font-weight: bold;
-}
-
-.button_style {
+.info {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  margin-right: 8px;
 }
 
 button {
-  background-color: #f44336;
+  padding: 8px 16px;
+  background-color: #ff4b4b;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
 button:hover {
-  background-color: #d32f2f;
+  background-color: #ff0000;
+}
+
+button .icon {
+  margin-right: 8px;
 }
