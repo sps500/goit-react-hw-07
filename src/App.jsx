@@ -16,6 +16,7 @@
 // };
 
 // export default App;
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -31,14 +32,14 @@ import styles from "./App.module.css";
 
 const App = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(selectFilteredContacts);
+  const filteredContacts = useSelector(selectFilteredContacts);
+
   const loading = useSelector(selectLoading);
   const error = useSelector(selectError);
 
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-  useEffect(() => {}, [contacts]);
 
   return (
     <div className={styles.container}>
@@ -48,7 +49,8 @@ const App = () => {
       <SearchBox />
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
-      <ContactList />
+      <ContactList contacts={filteredContacts} />{" "}
+      {/* Передаємо відфільтровані контакти */}
     </div>
   );
 };

@@ -52,7 +52,7 @@ const Contact = ({ id, name, number }) => {
   console.log("Rendering Contact:", { id, name, number });
 
   return (
-    <li className={styles.list_style}>
+    <>
       <div className={styles.container_style}>
         <div>
           <IoIosContact size={40} className={styles.icon_style} />
@@ -69,7 +69,7 @@ const Contact = ({ id, name, number }) => {
           DELETE
         </button>
       </div>
-    </li>
+    </>
   );
 };
 

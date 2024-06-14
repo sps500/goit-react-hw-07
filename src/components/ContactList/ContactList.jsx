@@ -40,11 +40,12 @@
 // };
 
 // export default ContactList;
+// ContactList.jsx
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Contact from "../Contact/Contact";
 import { fetchContacts } from "../../redux/contactsOps";
 import { selectFilteredContacts } from "../../redux/contactsSlice";
-import Contact from "../Contact/Contact";
 import styles from "./ContactList.module.css";
 
 const ContactList = () => {
@@ -54,7 +55,6 @@ const ContactList = () => {
   const error = useSelector((state) => state.contacts.error);
 
   useEffect(() => {
-    console.log("Dispatching fetchContacts");
     dispatch(fetchContacts());
   }, [dispatch]);
 
@@ -66,14 +66,12 @@ const ContactList = () => {
     return <p>Error: {error}</p>;
   }
 
-  console.log("Contacts in ContactList:", contacts);
-  console.log("Loading state:", loading);
-  console.log("Error state:", error);
-
   return (
     <ul className={styles.list}>
       {contacts.map((contact) => (
-        <Contact key={contact.id} {...contact} />
+        <li key={contact.id} className={styles.listItem}>
+          <Contact {...contact} />
+        </li>
       ))}
     </ul>
   );
