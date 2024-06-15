@@ -43,15 +43,27 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Phonebook</h1>
-      <ContactForm />
-      <h2 className={styles.subtitle}>Contacts</h2>
-      <SearchBox />
-      {loading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
-      <ContactList contacts={filteredContacts} />{" "}
-      {/* Передаємо відфільтровані контакти */}
+      <div className={styles.formContainer}>
+        <h1 className={styles.title}>Phonebook</h1>
+        <ContactForm />
+        <SearchBox />
+      </div>
+      <div className={styles.contactsContainer}>
+        <h2 className={styles.subtitle}>Contacts</h2>
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+        <ContactList contacts={filteredContacts} />
+      </div>
     </div>
+    // <div className={styles.container}>
+    //   <h1 className={styles.title}>Phonebook</h1>
+    //   <ContactForm />
+    //   <h2 className={styles.subtitle}>Contacts</h2>
+    //   <SearchBox />
+    //   {loading && <p>Loading...</p>}
+    //   {error && <p>{error}</p>}
+    //   <ContactList contacts={filteredContacts} />{" "}
+    // </div>
   );
 };
 

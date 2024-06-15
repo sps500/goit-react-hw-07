@@ -1,12 +1,10 @@
-/* ContactList.module.css */
-
 .list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   list-style-type: none;
   padding: 0;
-  width: 100%;
+  width: 100vh;
 }
 
 .listItem {
@@ -14,7 +12,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Відстань між рядками */
+  margin-bottom: 20px;
   width: calc(33.33% - 20px);
 }
 
@@ -31,3 +29,24 @@
 .button_style {
   margin-top: auto;
 }
+
+/* .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px); 
+  flex-shrink: 0;
+} */

@@ -1,4 +1,4 @@
-.list_style {
+/* .list_style {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -6,22 +6,22 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: calc(33.33% - 20px); /* Ширина для відображення по три в ряд */
-  flex-shrink: 0; /* Заборона зменшення контактів */
-}
+  width: calc(33.33% - 20px);
+  flex-shrink: 0; 
+} */
 
-.container_style {
+/* .container_style {
   display: flex;
-  flex-direction: column; /* Відображення елементів в стовпці */
-}
+  flex-direction: column; 
+} */
 
-.icon_style {
+/* .icon_style {
   margin-right: 10px;
-}
-
+} */
+/* 
 .button_style {
-  margin-top: auto; /* Вирівнювання кнопки внизу блоку */
-}
+  margin-top: auto; 
+} */
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -38,4 +38,32 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px; /* Відстань між рядками */
+}
+/* ================================================== */
+
+.list_style {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container_style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_style {
+  margin-bottom: 10px;
+}
+
+.button_style {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
 }
